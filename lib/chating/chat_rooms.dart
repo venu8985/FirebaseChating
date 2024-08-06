@@ -67,7 +67,10 @@ class ChatRoomsScreen extends StatelessWidget {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => ChatScreen(roomId: roomId),
+          builder: (context) => ChatScreen(
+            roomId: roomId,
+            recieverName: '${otherUserName}',
+          ),
         ),
       );
     } else {
@@ -82,7 +85,10 @@ class ChatRoomsScreen extends StatelessWidget {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => ChatScreen(roomId: roomId),
+          builder: (context) => ChatScreen(
+            roomId: roomId,
+            recieverName: '${otherUserName}',
+          ),
         ),
       );
     }
